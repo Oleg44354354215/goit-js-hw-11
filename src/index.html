@@ -97,19 +97,27 @@
         justify-content: center;
       }
       .list-item{
+        height: 200px;
         border: 1px solid black;
         transition: transform .3s;
       }
       img{
         width: 360px;
         height: 200px;
+        max-width: 100%;
         display: block;
-      }
+        overflow: auto;
+        object-fit: cover;
+       
+    }
       .info{
       display: flex;
       justify-content: space-between;
-      padding: 4px 20px;
+      padding: 0 20px;
+      height: 48px;
       background-color: rgb(205, 205, 195);
+      position: relative;
+      bottom:48px;
     }
     .item{
         display: flex;
@@ -126,10 +134,10 @@
     }
     .kuu{
         font-weight: 400;
-font-size: 12px;
-line-height: 2;
-letter-spacing: 0.04em;
-color: #2e2f42;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: #2e2f42;
     }
 .list-item:hover,
 .list-item:focus {
