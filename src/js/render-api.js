@@ -14,8 +14,7 @@ export function gallery(images) {
             <p class="item"><span class="item-text">Wiews</span> <span class="kuu">${views}</span></p>
             <p class="item"><span class="item-text">Comments</span> <span class="kuu">${comments}</span></p>
             <p class="item"><span class="item-text">Downlods</span> <span class="kuu">${downloads}</span></p>
-        </div></a>
-        </li>`).join("")
+        </div></a></li>`).join("")
         gal.innerHTML = element;
     if (!box) {
         box = new SimpleLightbox(".gallery-item", {
